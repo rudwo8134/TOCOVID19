@@ -1,6 +1,6 @@
 $(document).ready(function(){
     $.ajax({
-     url:"./canada.csv",
+     url:"/public/canada.csv",
      dataType:"text",
      success:function(data)
      {
@@ -31,7 +31,7 @@ $(document).ready(function(){
   });
   $(document).ready(function(){
     $.ajax({
-     url:"./canada.csv",
+     url:"/public/canada.csv",
      dataType:"text",
      success:function(data)
      {
@@ -62,7 +62,7 @@ $(document).ready(function(){
   });
   $(document).ready(function(){
     $.ajax({
-     url:"./canada.csv",
+     url:"/public/canada.csv",
      dataType:"text",
      success:function(data)
      {
@@ -93,7 +93,7 @@ $(document).ready(function(){
   });
   $(document).ready(function(){
     $.ajax({
-     url:"./canada.csv",
+     url:"/public/canada.csv",
      dataType:"text",
      success:function(data)
      {
@@ -124,7 +124,7 @@ $(document).ready(function(){
   });
   $(document).ready(function(){
     $.ajax({
-     url:"./canada.csv",
+     url:"/public/canada.csv",
      dataType:"text",
      success:function(data)
      {
@@ -155,7 +155,7 @@ $(document).ready(function(){
   });
   $(document).ready(function(){
     $.ajax({
-     url:"./canada.csv",
+     url:"/public/canada.csv",
      dataType:"text",
      success:function(data)
      {
