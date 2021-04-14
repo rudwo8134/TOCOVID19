@@ -455,7 +455,7 @@ li{
     .main_body{
         display: flex;
         flex-direction: column;
-        width:100%
+        width:750px;
     }
     .main_body .main_menu{
         display: none;
