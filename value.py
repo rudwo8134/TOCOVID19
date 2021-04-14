@@ -11,7 +11,7 @@ headers = {
     "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15"}
 
 
-filename ="./public/canada.csv"
+filename ="canada.csv"
 f = open(filename, 'w', encoding="utf-8-sig", newline="")
 writer = csv.writer(f)
 title =["Total Confirmed in Canada","Total Death in Canada","Total Recovered in Canada","Total Active in Canada","Daily Confirmed in Canada","Daily Death in Canada","Daily Recovered in Canada","Daily Active in Canada",
