@@ -450,3 +450,20 @@ li{
     text-align: center;
     
 }
+
+@media screen and (max-width:768px){
+    .main_body{
+        display: flex;
+        flex-direction: column;
+    }
+    .main_body .main_menu{
+        display: none;
+    }
+    .main_body .main_ad{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+        
+    }
+}
+  
