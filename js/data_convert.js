@@ -5,7 +5,7 @@ $(document).ready(function(){
      success:function(data)
      {
       var corona_data = data.split(/\r?\n/);
-      var table_data = '<table class="table table-bordered table-striped">';
+      var table_data = '<table class="table table-dark table-borderless">';
       for(var count = 0; count<corona_data.length-1; count++)
       {
        var cell_data = corona_data[count].split(",");

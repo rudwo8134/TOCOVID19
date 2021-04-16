@@ -42,19 +42,21 @@ li{
     display:flex;
     justify-content: space-between;
     padding: 0 var(--p-padding);
-    background-color:var(--b-background);
+    background-color:white;
+}
+.intro .logo i{
+    font-size: 60px;
+    color: var(--b-red-color);
+    margin-top:10px;
+    margin-left:10px;
+    width: 100px;
 }
 .intro .logandtitle{
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
-.intro .logandtitle .logo i{
-    font-size: 60px;
-    color: var(--b-red-color);
-    margin-left:35px;
-    width: 100px;
-}
+
 .intro .logandtitle .realtitle{
     display:flex;
     flex-direction: column;
@@ -92,20 +94,69 @@ li{
 .intro .icon .email{
     color:var(--b-mail);
 }
+.navigation{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    position: sticky;
+    top:-20px;
+}
+.navigation div{
+    background-color:#f8f9fa;
+}
+.navigation .menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin:0px 30px;
+
+}
+
+/* .navigation .main_menu button{
+    height:5vh;
+    width:20vh;
+    padding-top: 10px;
+    font-size: 10px;
+    color:var(--f-buttoncolor);
+    border:0.1px dotted var(--b-blue-dark-color);
+    border-radius:15%;
+    text-align:center;
+    font-weight: bold;
+}
+.navigation .main_menu button:nth-of-type(1){
+    background-color: var(--b-buttoncolor);
+}
+.navigation .main_menu button:nth-of-type(2){
+    background-color: var(--b-buttoncolor2);
+}
+.navigation .main_menu button:nth-of-type(3){
+    background-color: var(--b-buttoncolor);
+}
+.navigation .main_menu button:nth-of-type(4){
+    background-color: var(--b-buttoncolor2);
+}
+.navigation .main_menu button:nth-of-type(5){
+    background-color: var(--b-buttoncolor);
+}
+.navigation .main_menu button:nth-of-type(6){
+    background-color: var(--b-buttoncolor2);
+} */
 .people{
     display: flex;
     justify-content: flex-end;
-    background-color: var(--b-background);
+    background-color: white;
 }
 .people >li{
-    padding-right:calc(var(--p-padding)*5);
+    padding-right:calc(var(--p-padding)*4);
+}
+.people >li >span{
+    color:blue;
 }
 .main_body{
     display:flex;
     justify-content: space-between;
     padding-top:5px;
-    border-top:1px solid grey;
-    background-color: var(--b-background);
+    background-color: white;
 }
 .main_body .main_menu{
     flex:1;
@@ -121,46 +172,7 @@ li{
 .main_body .main_menu .menu{
     flex:1 1 auto;
 }
-.main_body .main_menu li{
-    height:8.33vh;
-    width:23vh;
-    padding-top: 14px;
-    font-size: 16px;
-    color:var(--f-buttoncolor);
-    border:0.1px dotted var(--b-blue-dark-color);
-    text-align:center;
-    font-weight: bold;
-}
-.main_body .main_menu li:nth-of-type(1){
-    background-color: var(--b-buttoncolor);
-}
-.main_body .main_menu li:nth-of-type(2){
-    background-color: var(--b-buttoncolor2);
-}
-.main_body .main_menu li:nth-of-type(3){
-    background-color: var(--b-buttoncolor);
-}
-.main_body .main_menu li:nth-of-type(4){
-    background-color: var(--b-buttoncolor2);
-}
-.main_body .main_menu li:nth-of-type(5){
-    background-color: var(--b-buttoncolor);
-}
-.main_body .main_menu li:nth-of-type(6){
-    background-color: var(--b-buttoncolor2);
-}
-.main_body .main_menu .advertisement{
-    flex:1 1 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: center;
-}
-.main_body .main_menu .advertisement div{
-    height:10vh;
-    width:23vh;
-    border: 2px solid white;
-}
+
 .main_paragraph{
     flex:5;
     display: flex;
@@ -436,7 +448,7 @@ li{
 .main_ad{
     flex:1;
     position: sticky;
-    top:0;
+    top:5vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

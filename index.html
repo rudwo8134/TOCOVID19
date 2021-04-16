@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="co.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
-    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -23,8 +22,9 @@
 
 <body>
     <header class="intro">
+        <div class="logo"><i class="fas fa-shield-virus"></i>
+        </div>
         <div class="logandtitle">
-            <div class="logo"><i class="fas fa-shield-virus"></i></div>
             <div class="realtitle">
             <div class="title"><i class="fab fa-canadian-maple-leaf"></i>P.O.F.C</div>
             <div class="subtitle">Protect Ontario From Coronavirus</div>
@@ -36,53 +36,58 @@
             <li class="email"><i class="fas fa-envelope"></i></li>
         </div>
     </header>
-
+<nav class="navigation">
     <span class="people">
-        <li class="Today"><i class="fas fa-flag"></i> Today:</li>
-        <li class="Total"><i class="far fa-flag"></i> Total:</li>
+        <li class="Today"><i class="fas fa-flag"></i>   Total Number of Visitors:  <span id='number'>0</span></li>
     </span>
+    <div class="main_menu">
+        <div class="menu">
+            <button class="btn btn-danger"><i class="fas fa-virus-slash"></i> Positive  Case in Ontario</button>
+            <button class="btn btn-danger"><i class="fas fa-virus-slash"></i> Positive Case in Canada</button>
+            <button class="btn btn-success"><i class="fas fa-virus-slash"></i> Vaccination</button>
+            <button class="btn btn-success"><i class="fas fa-shield-virus"></i> Covid-19 Protection</button>
+            <button class="btn btn-info"><i class="fas fa-shield-virus"></i> Vaccine Booking</button>
+            <button class="btn btn-info"><i class="fas fa-ad"></i> Advertisement</button>
+        </div>
+    </div>
+</nav>
+    
+
     
     <div class="main_body">
-        <div class="main_menu">
-            <div class="menu">
-                <li class="status"><i class="fas fa-virus-slash"></i> Positive  Case in Ontario</li>
-                <li class="map"><i class="fas fa-virus-slash"></i> Positive Case in Canada</li>
-                <li class="world_status"><i class="fas fa-virus-slash"></i> Vaccination</li>
-                <li class="intro2"><i class="fas fa-shield-virus"></i> Covid-19 Protection</li>
-                <li class="prevention"><i class="fas fa-shield-virus"></i> Vaccine Booking</li>
-                <li class="vaccine status"><i class="fas fa-ad"></i> Advertisement</li>
-            </div>
-            <div class="advertisement">
-                <div class="ad1">ad1</div>
-                <div class="ad2">ad2</div>
-                <div class="ad3">ad3</div>
-                <div class="ad4">ad4</div>
-            </div>
-        </div>
         <div class="main_paragraph"> 
             <span class="ontario2">
-                <h1>Positive Case in Ontario</h1>
+                <div class="scroll1"></div>
+                <h1>Positive Case in Ontario<br><span class="badge bg-secondary"></span></h1>
                 <div id="employee_table4"></div>
                 <div id="employee_table3"></div>
+                
             </span>
             <span class="ontario">
-                <h1 class="canada1">Positive Case in Canada</h1>
+                <div class="scroll2"></div>
+                <h1 class="canada1">Positive Case in Canada<br><span class="badge bg-secondary"></span></h1>
                 <div id="employee_table2"></div>
                 <div id="employee_table"></div>
+    
             </span>
             <span class="ontario3">
-                <h1>Test Case in Ontario</h1>
+                <h1>Test Case in Ontario<br><span class="badge bg-secondary"></span></h1>
                 <div id="employee_table5"></div>
+                
             </span>
             <span class="ontario4">
-                <h1>Vaccinate number</h1>
+                <div class="scroll3"></div>
+                <h1>Vaccinate number<br>  <span class="badge bg-secondary">New</span></h1>
                 <div id="employee_table6"></div>
+              
             </span>
             <span class="ontario5">
+                <div class="scroll4"></div>
                 <h1>How to prevent from Covid</h1>
                 <iframe width="700" height="400" src="https://www.youtube.com/embed/7PcUzip7lt4" title="URL appearing on screen: Canada.ca/coronavirus" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </span>
             <span class="ontario6">
+                <div class="scroll5"></div>
                 <h1>Vaccine Booking</h1>
                 <a href="https://covid-19.ontario.ca/book-vaccine/" target="_blank">click to book</a>
             </span>
@@ -98,8 +103,8 @@
             <span class="ad2-4">ad</span>
         </div>
     </div>
-    <script src="./data_convert.js"></script>
-    <script src="scrool.js"></script>
+    <script src="./js/data_convert.js"></script>
+    <script src='./js/scrool.js'></script>
     
 </body>
 </html>
