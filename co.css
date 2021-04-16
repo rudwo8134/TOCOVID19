@@ -469,4 +469,29 @@ li{
 
     }
 }
-  
+@media screen and (max-width:320px){
+    body{
+        width: 312px;
+        height: 812px;
+    }
+    .main_body{
+        display: flex;
+        flex-direction: column;
+        width:320px;
+        height:812px;
+    }
+    .main_body .main_menu{
+        display: none;
+        width:50%;
+    }
+    .main_body .main_paragraph .h{
+        width: 100px;
+    }
+    .main_body .main_ad{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+        width: 50%;
+
+    }
+}
