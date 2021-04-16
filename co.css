@@ -172,6 +172,14 @@ li{
 .main_body .main_menu .menu{
     flex:1 1 auto;
 }
+.main_menu .fa-bars{
+    display: none;
+    height:3vh;
+    font-size: 15px;
+    text-align: center;
+    background-color: honeydew;
+    color:black
+}
 
 .main_paragraph{
     flex:5;
@@ -464,46 +472,123 @@ li{
 }
 
 @media screen and (max-width:768px){
-    .main_body{
-        display: flex;
-        flex-direction: column;
-        width:750px;
-    }
-    .main_body .main_menu{
-        display: none;
-        width:100%;
-    }
-    .main_body .main_ad{
-        display: flex;
-        flex-direction: row;
-        justify-content:space-between;
-        width: 100%;
-
-    }
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-@media screen and (max-width:320px){
-    body{
-        width: 312px;
-        height: 812px;
-    }
-    .main_body{
-        display: flex;
-        flex-direction: column;
-        width:320px;
-        height:812px;
-    }
-    .main_body .main_menu{
-        display: none;
-        width:50%;
-    }
-    .main_body .main_paragraph .h{
-        width: 100px;
-    }
-    .main_body .main_ad{
-        display: flex;
-        flex-direction: row;
-        justify-content:space-between;
-        width: 50%;
-
-    }
+.intro .logo{
+    display:none;
 }
+.intro .icon{
+    display: none;
+}
+.navigation{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.navigation .people{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.navigation .people li{
+    padding-right:1px;
+}
+.navigation .menu{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+}
+.navigation .menu button{
+    width: 100%;
+}
+.main_body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main_body .main_paragraph .ontario2 table{
+    width: 70vh;
+
+}
+
+.main_body .main_paragraph .ontario2 table #th4{
+    font-size: 13px;
+}
+.main_body .main_paragraph .ontario2 table #td4{
+    font-size: 20px;
+}
+.main_body .main_paragraph .ontario2 table #th3{
+    font-size: 13px;
+}
+.main_body .main_paragraph .ontario2 table #td3{
+    font-size: 20px;
+}
+
+.main_body .main_paragraph .ontario table{
+    width: 70vh;
+}
+
+.main_body .main_paragraph .ontario table #th1{
+    font-size: 13px;
+}
+.main_body .main_paragraph .ontario table #td1{
+    font-size: 20px;
+}
+.main_body .main_paragraph .ontario table #th2{
+    font-size: 13px;
+}
+.main_body .main_paragraph .ontario table #td2{
+    font-size: 20px;
+}
+
+.main_body .main_paragraph .ontario3 table{
+    width: 70vh;
+}
+.main_body .main_paragraph .ontario3 table #th5{
+    font-size: 13px;
+}
+.main_body .main_paragraph .ontario3 table #td5{
+    font-size: 20px;
+}
+
+.main_body .main_paragraph .ontario4 table{
+    width: 70vh;
+}
+.main_body .main_paragraph .ontario4 table #th6{
+    font-size: 13px;
+}
+.main_body .main_paragraph .ontario4 table #td6{
+    font-size: 20px;
+}
+
+.main_body .main_paragraph .ontario5 iframe{
+    width: 70vh;
+}
+.main_ad{
+    display: none;
+}
+.main_menu .fa-bars{
+    display: block;
+}
+.main_menu .menu{
+    display: none;
+}
+.main_menu .menu.active{
+    display:block;
+}
+
+/* .navigation .people{
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-bottom: 0;
+} */
+
+
+ 
+}
+

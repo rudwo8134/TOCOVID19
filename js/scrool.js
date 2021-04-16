@@ -24,3 +24,10 @@ function updatevisit(){
         countEI.innerHTML =res.value;
     });
 }
+
+const togglebrn =document.querySelector('.fa-bars');
+const menu =document.querySelector('.menu')
+
+togglebrn.addEventListener('click',()=>{
+    menu.classList.toggle('active')
+})
