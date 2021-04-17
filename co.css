@@ -73,6 +73,7 @@ li{
     flex-direction: column;
     align-items: center;
     padding-left: var(--p-padding);
+    
 }
 .intro .logandtitle .realtitle i{
     color: red;
@@ -120,7 +121,6 @@ li{
     flex-direction: row;
     justify-content: space-between;
     margin:0px 30px;
-
 }
 
 /* .navigation .main_menu button{
@@ -192,6 +192,7 @@ li{
     color:black
 }
 
+
 .main_paragraph{
     flex:5;
     display: flex;
@@ -207,6 +208,7 @@ li{
 .main_paragraph .ontario h1{
     color: var(--f-buttoncolor);
     margin-top: 15vh;
+    
 }
 .main_paragraph .ontario div table{
     height: 10vh;
@@ -551,7 +553,7 @@ body{
     font-weight: bold;
 }
 .main_body .main_paragraph .ontario2 table #td4{
-    font-size: 16px;
+    font-size: 14px;
     font-weight: bold;
 }
 .main_body .main_paragraph .ontario2 table #th3{
@@ -565,6 +567,7 @@ body{
 
 .main_body .main_paragraph .ontario h1{
     font-size: 30px;
+    animation: text-shadow-drop-right 1s backwards;
 }
 .main_body .main_paragraph .ontario span{
     font-size: 10px;
@@ -651,4 +654,3 @@ body{
 
  
 }
-
