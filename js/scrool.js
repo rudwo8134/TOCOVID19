@@ -31,3 +31,13 @@ const menu =document.querySelector('.menu')
 togglebrn.addEventListener('click',()=>{
     menu.classList.toggle('active')
 })
+
+const btns = document.querySelectorAll('.menu button')
+console.log(btns)
+for(let i =0; i<btns.length;i++){
+    btns[i].addEventListener('click',()=>{
+        menu.classList.remove('active')
+    })
+}
+
+
