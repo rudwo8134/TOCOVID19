@@ -34,11 +34,16 @@
 html{
     width: 100%;
     height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
 }
 body{
     width: 100%;
     height: 100%;
-    margin:0px;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
     font-family: 'Poppins', sans-serif;
 }
 li{
@@ -477,7 +482,7 @@ li{
     
 }
 
-@media screen and (max-width:479px){
+@media screen and (max-width:720px){
 html{
     height: 100%;
     width: 100%;
@@ -523,63 +528,105 @@ body{
     align-items: center;
 }
 
+.main_body .main_paragraph{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+.main_body .main_paragraph .ontario2 h1{
+    font-size: 30px;
+}
+.main_body .main_paragraph .ontario2 span{
+    font-size: 10px;
+}
 .main_body .main_paragraph .ontario2 table{
-    width: 70vh;
+    width: 45vh;
 
 }
 
 .main_body .main_paragraph .ontario2 table #th4{
-    font-size: 13px;
+    font-size: 10px;
+    font-weight: bold;
 }
 .main_body .main_paragraph .ontario2 table #td4{
-    font-size: 20px;
+    font-size: 16px;
+    font-weight: bold;
 }
 .main_body .main_paragraph .ontario2 table #th3{
-    font-size: 13px;
+    font-size: 10px;
+    font-weight: bold;
 }
 .main_body .main_paragraph .ontario2 table #td3{
-    font-size: 20px;
+    font-size: 16px;
+    font-weight: bold;
 }
 
+.main_body .main_paragraph .ontario h1{
+    font-size: 30px;
+}
+.main_body .main_paragraph .ontario span{
+    font-size: 10px;
+}
 .main_body .main_paragraph .ontario table{
-    width: 70vh;
+    width: 45vh;
 }
 
 .main_body .main_paragraph .ontario table #th1{
-    font-size: 13px;
+    font-size: 10px;
+    font-weight: bold;
 }
 .main_body .main_paragraph .ontario table #td1{
-    font-size: 20px;
+    font-size: 16px;
+    font-weight: bold;
 }
 .main_body .main_paragraph .ontario table #th2{
-    font-size: 13px;
+    font-size: 10px;
+    font-weight: bold;
 }
 .main_body .main_paragraph .ontario table #td2{
-    font-size: 20px;
+    font-size: 16px;
+    font-weight: bold;
 }
-
+.main_body .main_paragraph .ontario3 h1{
+    font-size: 30px;
+}
+.main_body .main_paragraph .ontario3 span{
+    font-size: 10px;
+}
 .main_body .main_paragraph .ontario3 table{
-    width: 70vh;
+    width: 45vh;
 }
 .main_body .main_paragraph .ontario3 table #th5{
-    font-size: 13px;
+    font-size: 10px;
 }
 .main_body .main_paragraph .ontario3 table #td5{
-    font-size: 20px;
+    font-size: 16px;
+    font-weight: bold;
 }
-
+.main_body .main_paragraph .ontario4 h2{
+    font-size: 30px;
+}
+.main_body .main_paragraph .ontario4 span{
+    font-size: 10px;
+}
 .main_body .main_paragraph .ontario4 table{
-    width: 70vh;
+    width: 45vh;
 }
 .main_body .main_paragraph .ontario4 table #th6{
-    font-size: 13px;
+    font-size: 10px;
 }
 .main_body .main_paragraph .ontario4 table #td6{
-    font-size: 20px;
+    font-size: 16px;
+    font-weight: bold;
 }
 
+.main_body .main_paragraph .ontario5 h1{
+    font-size: 28px;
+}
 .main_body .main_paragraph .ontario5 iframe{
-    width: 70vh;
+    width: 45vh;
+    height: 30vh;
 }
 .main_ad{
     display: none;
