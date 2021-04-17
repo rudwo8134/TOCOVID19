@@ -4,7 +4,7 @@ for(let i=0; i<button.length; i++){
     
     button[i].addEventListener('click',(e)=>{
         e.preventDefault();
-        document.querySelector('.scroll' +(i+1)).scrollIntoView(true);
+        document.querySelector('.scroll' +(i)).scrollIntoView(true);
     });
 }
 
@@ -34,7 +34,7 @@ togglebrn.addEventListener('click',()=>{
 
 const btns = document.querySelectorAll('.menu button')
 console.log(btns)
-for(let i =0; i<btns.length;i++){
+for(let i =0; i<btns.length; i++){
     btns[i].addEventListener('click',()=>{
         menu.classList.remove('active')
     })
