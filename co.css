@@ -66,6 +66,7 @@ li{
     display: flex;
     justify-content: flex-start;
     align-items: center;
+   
 }
 
 .intro .logandtitle .realtitle{
@@ -73,7 +74,8 @@ li{
     flex-direction: column;
     align-items: center;
     padding-left: var(--p-padding);
-    
+    animation-name: speed;
+    animation-duration: 2s;
 }
 .intro .logandtitle .realtitle i{
     color: red;
@@ -653,4 +655,9 @@ body{
 
 
  
+}
+
+@keyframes speed{
+    from {transform: translate(-250px);}
+    to {transform: translate(0px);}
 }
