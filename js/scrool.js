@@ -4,7 +4,7 @@ for(let i=0; i<button.length; i++){
     
     button[i].addEventListener('click',(e)=>{
         e.preventDefault();
-        document.querySelector('.scroll' +(i)).scrollIntoView(true);
+        document.querySelector('.scroll' +(i+1)).scrollIntoView(true);
     });
 }
 
