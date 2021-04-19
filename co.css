@@ -365,6 +365,34 @@ li{
 #td4:nth-of-type(2){
     color:red;
 }
+
+.main_body .main_paragraph .ontarionumber{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 140px;
+    margin-bottom: 100px;
+    width: 80%;
+    height: 130vh;
+}
+.main_body .main_paragraph .ontarionumber .table{
+   margin-top: 20px;
+}
+.main_body .main_paragraph .ontarionumber .table th{
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+ }
+ .main_body .main_paragraph .ontarionumber .table tr{
+    font-size: 10px;
+    text-align: center;
+    font-weight: bold;
+ }
+ .main_body .main_paragraph .ontarionumber .table td{
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+ }
 /*  */
 .main_paragraph .ontario3{
 
@@ -536,7 +564,6 @@ body{
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     width: 100%;
 }
 .main_body .main_paragraph .ontario2 h1{
@@ -566,6 +593,9 @@ body{
     font-size: 16px;
     font-weight: bold;
 }
+
+
+
 
 .main_body .main_paragraph .ontario h1{
     font-size: 30px;
@@ -646,7 +676,39 @@ body{
 .main_menu .menu.active{
     display:block;
 }
+.main_body .main_paragraph .ontarionumber{
+    margin-bottom: 10px;
+    height: 90vh;
+}
+.main_body .main_paragraph .ontarionumber h1{
+    font-size: 26px;
 
+}
+.main_body .main_paragraph .ontarionumber span{
+    font-size: 10px;
+}
+.main_body .main_paragraph .ontarionumber table{
+    width: 30vh;
+
+}
+.main_body .main_paragraph .ontarionumber .table thead th{
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.main_body .main_paragraph .ontarionumber .table tbody th{
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+.main_body .main_paragraph .ontarionumber .table td{
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
 /* .navigation .people{
     flex-direction: row;
     justify-content: flex-end;
