@@ -4,10 +4,10 @@
  * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-logomodern-business-nav/blob/master/LICENSE)
  */
  html{
-   width: 100%;
-   height: 100%;
+  width: 100%;
+  height: 100%;
  }
-body {
+ body {
   width: 100%;
   height: 100%;
   padding-top: 56px;
@@ -64,4 +64,52 @@ body {
 }
 td{
   font-weight: bold;
+}
+
+@media screen and (max-width:768px){
+  html{
+    width: 100%;
+    height: 100%;
+   }
+   body {
+    width: 100%;
+    height: 100%;
+  }
+.carousel-item{
+  width: 100%;
+}
+.container .my-4{
+  font-size: 31px;
+}
+h2{
+  font-size:24px;
+}
+.table{
+  width:100%;
+  height: 10vh;
+}
+.t1 th{
+  margin:0;
+  font-size: 8px;
+}
+.t1 td{
+  margin:0;
+  font-size: 11px;
+}
+.t2 th{
+  margin:0;
+  font-size: 10px;
+}
+.t2 td{
+  margin:0;
+  font-size: 13px;
+}
+.t3 th{
+  margin:0;
+  font-size: 12px;
+}
+.t3 td{
+  margin:0;
+  font-size: 14px;
+}
 }

@@ -16,9 +16,9 @@ const getd_confirmed = async (area,html) =>{
         const res = await fetch(`https://api.opencovid.ca/summary?loc=${area}&date=${fulltime}`)
         const data = await res.json();
         input[1].innerText = data.summary[0].cumulative_cases;
-        input[2].innerText = data.summary[0].deaths;
+        input[2].innerHTML = `<span class="t-d"><i class="fas fa-arrow-circle-up"></i>${data.summary[0].deaths}<span>`;
         input[3].innerText = data.summary[0].cumulative_deaths;
-        return input[0].innerText = data.summary[0].cases;
+        return input[0].innerHTML = `<span class="t-c"><i class="fas fa-arrow-circle-up"></i>${data.summary[0].cases}</span>`;
      
     } catch(e){
         const input = document.querySelectorAll(`${html}`);
@@ -48,6 +48,8 @@ const gett_confirmed = async (area,html) =>{
         input[1].innerHTML = `${data.summary[0].cumulative_deaths} <br> <span class="t-d"><i class="fas fa-arrow-circle-up"></i>${b}</span>`;
         input[2].innerHTML = `${data.summary[0].cumulative_recovered} <br> <span class="t-r"><i class="fas fa-arrow-circle-up"></i>${c}</span>`;
         input[3].innerHTML = `${data.summary[0].active_cases} <br> <span class="t-a"><i class="fas fa-arrow-circle-up"></i>${d}</span>`;
+        input[4].innerHTML = data.summary[0].cumulative_avaccine;
+        input[5].innerHTML = `<span class="t-v"><i class="fas fa-arrow-circle-up"></i>${data.summary[0].avaccine}<span>`;
         return input[0].innerHTML = `${data.summary[0].cumulative_cases} <br> <span class="t-c" ><i class="fas fa-arrow-circle-up"></i>${a}</span>`;
      
     } catch(e){
@@ -67,7 +69,7 @@ const gett_confirmed = async (area,html) =>{
         input[2].innerHTML = `${data.summary[0].cumulative_recovered} <br> <span <span class="t-r"><i class="fas fa-arrow-circle-up"></i>${c}</span>`;
         input[3].innerHTML = `${data.summary[0].active_cases} <br> <span class="t-a"><i class="fas fa-arrow-circle-up"></i>${d}</span>`;
         input[4].innerHTML = data.summary[0].cumulative_avaccine;
-        input[5].innerHTML = `<span class="t-v"><i class="fas fa-arrow-circle-up"></i>${data.summary[0].avaccine}<span`;
+        input[5].innerHTML = `<span class="t-v"><i class="fas fa-arrow-circle-up"></i>${data.summary[0].avaccine}<span>`;
         return input[0].innerHTML = `${data.summary[0].cumulative_cases} <br> <span class="t-c"><i class="fas fa-arrow-circle-up"></i>${a}</span>`;
     }
 }
