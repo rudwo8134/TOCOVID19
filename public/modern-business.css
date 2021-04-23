@@ -85,31 +85,48 @@ h2{
   font-size:24px;
 }
 .table{
-  width:100%;
+  width:90%;
   height: 10vh;
 }
 .t1 th{
   margin:0;
-  font-size: 8px;
+  font-size: 7px;
 }
 .t1 td{
   margin:0;
-  font-size: 11px;
+  font-size: 10px;
 }
+.t1 .country{
+  padding-right:0px;
+  padding-left:0px;
+  margin:0px 0px;
+  font-size: 13px;
+}
+
 .t2 th{
   margin:0;
-  font-size: 10px;
+  font-size: 9px;
 }
 .t2 td{
   margin:0;
+  font-size: 12px;
+}
+.t2 .cityh{
+  padding-right:0px;
+  padding-left:0px;
+  margin:0px 0px;
   font-size: 13px;
+}
+.t3 {
+  width: 97%;
 }
 .t3 th{
   margin:0;
-  font-size: 12px;
+  font-size: 13px;
 }
 .t3 td{
   margin:0;
-  font-size: 14px;
+  font-size: 15px;
 }
+
 }
